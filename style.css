@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header.hero {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: white;
+  color: #1e90ff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e90ff;
+}
+
+.kartu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kartu {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  transition: transform 0.2s ease;
+}
+
+.kartu:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 40px;
+}

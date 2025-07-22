@@ -2,49 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alfian Nadzir - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Alfian Nadzir</h1>
-    <p>Web Developer & Creative Enthusiast</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm Alfian</h1>
+      <p>Aspiring Web Developer | Creative Thinker</p>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
+  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I’m Alfian, a passionate web developer who enjoys crafting beautiful and functional web experiences. I love learning new technologies and turning ideas into reality.
-    </p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m currently learning web development and building creative digital projects. I love exploring unique layouts and modern interfaces.</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>
-      Here's a showcase of some projects I’ve worked on. From personal websites to experimental web apps.
-    </p>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Responsive Design</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Want to connect? Reach out via email or through my social channels.
-    </p>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to contact me through the form below or via email.</p>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
-
-  <footer>
-    <p>© 2025 Alfian Nadzir</p>
-  </footer>
 
 </body>
 </html>

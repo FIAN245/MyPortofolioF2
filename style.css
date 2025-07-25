@@ -1,17 +1,29 @@
+/* Gaya Umum */
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #fdfdfd;
-  color: #333;
+  scroll-behavior: smooth;
 }
 
 header {
   background-color: #0077cc;
   color: white;
-  padding: 40px 20px;
   text-align: center;
+  padding: 40px 20px;
+}
+
+nav {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
 }
 
 section {
@@ -20,52 +32,48 @@ section {
   margin: auto;
 }
 
-h2 {
-  color: #0077cc;
+section h2 {
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-/* Projects List */
 ul {
   list-style-type: square;
   padding-left: 20px;
 }
 
-/* 🔥 Tambahan CSS Hari Ini */
-#skills {
-  background-color: #f0f8ff;
+footer {
   text-align: center;
+  padding: 20px;
+  background-color: #eeeeee;
+  font-size: 0.9em;
+  color: #555;
 }
 
-.skill-list {
+/* 🔥 Tambahan CSS Hari Ini - Pengalaman */
+#experience {
+  background-color: #ffffff;
+}
+
+.experience-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  flex-direction: column;
+  gap: 30px;
   margin-top: 20px;
 }
 
-.skill-item {
-  background-color: #e0e0e0;
-  padding: 12px 20px;
+.experience-item {
+  border-left: 4px solid #0077cc;
+  padding-left: 20px;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
   border-radius: 10px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-/* Contact */
-#contact a {
+.experience-item h3 {
+  margin-top: 0;
   color: #0077cc;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #f1f1f1;
-  color: #555;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
 }

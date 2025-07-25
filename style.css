@@ -1,79 +1,78 @@
-/* Gaya Umum */
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background-color: #0077cc;
+  background-color: #333;
   color: white;
-  text-align: center;
   padding: 40px 20px;
+  text-align: center;
 }
 
 nav {
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 10px;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
 }
 
 nav a {
-  margin: 0 15px;
+  color: white;
   text-decoration: none;
-  color: #0077cc;
   font-weight: bold;
 }
 
 section {
   padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
 }
 
 section h2 {
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  color: #333;
+  color: #222;
+  margin-bottom: 15px;
 }
 
 ul {
-  list-style-type: square;
   padding-left: 20px;
 }
 
 footer {
+  background-color: #222;
+  color: white;
   text-align: center;
   padding: 20px;
-  background-color: #eeeeee;
-  font-size: 0.9em;
-  color: #555;
 }
 
-/* 🔥 Tambahan CSS Hari Ini - Pengalaman */
-#experience {
-  background-color: #ffffff;
+/* Tambahan untuk bagian GOALS */
+#goals {
+  background-color: #fcfcfc;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
 }
 
-.experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.experience-item {
-  border-left: 4px solid #0077cc;
+#goals ul {
+  margin-top: 15px;
   padding-left: 20px;
-  background-color: #f9f9f9;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  list-style-type: disc;
 }
 
-.experience-item h3 {
-  margin-top: 0;
-  color: #0077cc;
+#goals li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }

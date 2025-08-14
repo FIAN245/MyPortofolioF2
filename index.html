@@ -3,87 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - MyPortofolioF2</title>
+    <title>Portofolio Saya</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <nav>
-            <h1>MyPortofolioF2</h1>
-            <ul>
+            <div class="logo">MyPortofolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#timeline">Pengalaman</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
+    <section id="home" class="hero">
+        <h1>Halo, Saya Alfian Nadzir</h1>
+        <p>Mahasiswa & Kreator Digital</p>
+    </section>
+
     <section id="about">
         <h2>Tentang Saya</h2>
-        <p>Halo! Saya Alfian Nadzir, mahasiswa yang juga menjalankan beberapa usaha kreatif seperti jasa animasi Minecraft, pembuatan stempel, kartu nama, dan desain grafis. Saya senang mempelajari teknologi baru dan mengembangkan proyek digital.</p>
+        <p>Saya seorang mahasiswa yang aktif mengerjakan berbagai proyek digital seperti desain grafis, pembuatan website, dan animasi Minecraft.</p>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2>Keahlian</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Figma</div>
-            <div class="skill">Desain Grafis</div>
-            <div class="skill">Animasi Minecraft</div>
-        </div>
-    </section>
-
-    <!-- Timeline Section -->
-    <section id="timeline">
-        <h2>Pengalaman & Proyek</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                    <h3>MineCraftime - Jasa Animasi Minecraft</h3>
-                    <p>Mengerjakan berbagai pesanan animasi Minecraft untuk klien lokal dan internasional melalui Fiverr & Sociabuzz.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                    <h3>Snack.In - Aplikasi Pemesanan Makanan</h3>
-                    <p>Membuat prototipe high-fidelity aplikasi mobile untuk tugas besar Komputer Grafik menggunakan Figma.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                    <h3>Dimsam Gemoy - Usaha Kuliner</h3>
-                    <p>Mengembangkan dan memasarkan brand kuliner dimsum dengan konsep unik untuk tugas mata kuliah Komunikasi Bisnis.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Hubungi saya melalui:</p>
-        <ul class="contact-list">
-            <li><a href="https://www.facebook.com/alfian" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/alfian" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/alfian" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:alfian@example.com">Email</a></li>
+        <ul class="skills-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Desain Grafis (Photoshop, CorelDraw)</li>
+            <li>Animasi Minecraft</li>
+            <li>UI/UX Design (Figma)</li>
         </ul>
     </section>
 
-    <!-- Footer -->
+    <section id="projects">
+        <h2>Project Gallery</h2>
+        <div class="project-grid">
+            <div class="project-card" onclick="openModal('Website Snack.In', 'Aplikasi pemesanan makanan berbasis web.', 'https://via.placeholder.com/600x400')">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Website Snack.In</h3>
+                <p>Aplikasi pemesanan makanan berbasis web.</p>
+            </div>
+            <div class="project-card" onclick="openModal('Waxfall Game', 'Game petualangan 2D untuk Android.', 'https://via.placeholder.com/600x400')">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Waxfall Game</h3>
+                <p>Game petualangan 2D untuk Android.</p>
+            </div>
+            <div class="project-card" onclick="openModal('Dimsam Gemoy', 'Brand makanan kreatif dengan desain unik.', 'https://via.placeholder.com/600x400')">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Dimsam Gemoy</h3>
+                <p>Brand makanan kreatif dengan desain unik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: alfian@example.com</p>
+        <p>Instagram: <a href="https://instagram.com/username" target="_blank">@username</a></p>
+        <p>Fiverr: <a href="https://www.fiverr.com/s/pdgBp0E" target="_blank">Fiverr Profile</a></p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Alfian Nadzir. Semua Hak Dilindungi.</p>
+        <p>&copy; 2025 Alfian Nadzir. All rights reserved.</p>
     </footer>
 
+    <!-- Modal Popup -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <img id="modalImage" src="" alt="">
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, description, imageUrl) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalImage').src = imageUrl;
+            document.getElementById('projectModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('projectModal')) {
+                closeModal();
+            }
+        }
+    </script>
 </body>
 </html>

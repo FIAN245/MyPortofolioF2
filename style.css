@@ -73,7 +73,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: 250px; /* ukuran pas */
     transition: transform 0.3s ease;
 }
 
@@ -88,12 +88,12 @@ section {
 
 .project-card h3 {
     margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .project-card p {
-    font-size: 0.9rem;
-    padding: 0 10px 20px;
+    font-size: 0.85rem;
+    padding: 0 10px 15px;
     color: #555;
 }
 

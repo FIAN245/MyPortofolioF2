@@ -1,170 +1,100 @@
+/* ====== General Styles ====== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
+    color: #333;
 }
 
-/* Header dan navigasi */
 header {
-    background-color: #222;
-    padding: 15px 0;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background: #333;
+    padding: 10px 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #ff9800;
-}
-
-/* Hero section */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #ff9800, #f44336);
-    color: white;
-}
-
-/* Tentang, Skills, Contact */
-section {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.skills-list {
-    list-style: none;
-    text-align: center;
+    justify-content: center;
+    margin: 0;
     padding: 0;
 }
 
-.skills-list li {
-    background: white;
-    display: inline-block;
-    margin: 5px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+nav ul li {
+    margin: 0 15px;
 }
 
-/* Project gallery */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.project-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-    cursor: pointer;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-.project-card img {
-    width: 100%;
-    display: block;
-}
-
-.project-card h3 {
-    margin: 10px;
-}
-
-.project-card p {
-    margin: 0 10px 10px;
-    color: #555;
-}
-
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
+section {
+    padding: 40px;
     text-align: center;
-    animation: fadeIn 0.3s ease-in-out;
 }
 
-.modal-content img {
-    width: 100%;
+/* ====== Skills ====== */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #fff;
+    padding: 10px 20px;
     border-radius: 8px;
-    margin: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    cursor: pointer;
+/* ====== Gallery ====== */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.close:hover {
-    color: black;
+.gallery-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 250px;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-/* Footer */
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ====== Contact ====== */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 8px 0;
+}
+
+/* ====== Footer ====== */
 footer {
-    background: #222;
+    background: #333;
     color: white;
     text-align: center;
     padding: 15px 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
